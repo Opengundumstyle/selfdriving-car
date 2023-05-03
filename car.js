@@ -5,6 +5,20 @@ class Car{
          this.y= y;
          this.width = width;
          this.height = height;
+
+         this.controls = new Controls()
+
+     }
+
+     update(){
+          if(this.controls.forward){ 
+               this.y -= 2
+          }
+          if(this.controls.reverse){ 
+               this.y += 2
+          }
+         
+
      }
      
      draw(ctx){
@@ -20,4 +34,3 @@ class Car{
 
 }
 
-console.log("Car class loaded successfully");
