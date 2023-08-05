@@ -18,9 +18,9 @@ class Car{
      }
 
 
-     update(){
+     update(roadBorders){
            this.#move()
-           this.sensor.update()
+           this.sensor.update(roadBorders)
      }
 
 
